@@ -13,16 +13,20 @@ class Counter extends Component {
     addCount() {
         this.setState({
             count: this.state.count + 1
+        }, () => {
+            console.log(this.state.count)
         })
-        console.log(this.state.count)
+        
     }
 
 
     subtractCount() {
         this.setState({
             count: this.state.count - 1
+        }, () => {
+            console.log(this.state.count)
         })
-        console.log()
+        
     }
 
 
